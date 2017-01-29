@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+ <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/login.js"></script>
+    <script type="text/javascript">
+        $.mobile.pushStateEnabled = false;
+    </script>
+</head>
+<body>
+<!-------------- First page for form ----------->
+<div data-role="page">
+<!-------------- First page header ----------->
+<div data-role="header" data-theme="b" data-position="fixed">
+<h1>Online BookStore</h1>
+</div>
+<!-------------- First page main content ----------->
+<center><div data-role="main" class="ui-content">	
+<form id="login" name="login" method="post" action="home.html" onsubmit="return validateForm()">
+	<table width="100%" border="0" align="right">
+		<tr>
+			<td><img src ="Images/image1.jpg" height=540 width=840></td>
+			<td><table><tr>
+			<td><b>Username :<b> </td>
+			<td><input type="text" name="username" id="username" required /></td>
+		</tr>
+		<tr>
+			<td><b>Password : </b></td>
+			<td><input type="password" name="password" id="password" required /></td>
+		</tr>
+		<tr>
+			<td><input type="submit" name="button" id="button" value="Submit" /></td>
+<td>&nbsp;</td>
+			<td><input type="reset" name="button" id="button" value="Cancel" /></td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td><p style="text-indent: 2em;"><a href = "reg.html" rel="external">Click here to Sign Up</a></td>
+		</tr>
+		</table></td>
+		</tr>
+		
+	</table>
+	</div></center>
+	</form>
+	<div data-role="footer" data-theme="b">
+    <h3>Copyright &copy; All Rights Reserved</h3>
+	</div>
+
+
+
+</div>	           
+</body>
+</html>

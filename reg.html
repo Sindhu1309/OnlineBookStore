@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link href="jq.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.pushStateEnabled = false;
+    });
+</script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<link rel="stylesheet" href="jquery-mobile.css">
+<script src="jquery-mobile.js"></script>
+</head>
+<body>
+<!-------------- First page for form ----------->
+<div data-role="page">
+<!-------------- First page header ----------->
+<div data-role="header" data-theme="b" data-position="fixed">
+<a href="login.html"  rel="external" class="ui-btn ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-left">Back</a>
+<h1>Registration Form</h1>
+</div>
+<!-------------- First page main content ----------->
+<div data-role="main" class="ui-content">
+<form method="post" action="#pageone" data-ajax="false">
+<table width="500px" border="0" align="center">
+<tr>
+<td><b>User Name :*</b></td><td><input type="text" name="name" id="name" placeholder="User Name" required></td>
+</tr>
+<tr>
+<td><b>Password :*</b></td><td><input type="password" name="password" id="pasdwrd" placeholder="Password" required></td>
+</tr>
+<tr>
+<td><b>Email:*</b></td><td><input type="email" id="email" name="email" placeholder="Email" required></td>
+</tr>
+<tr>
+<td><b>Gender:</td>
+<td>Male</td>
+<td><input type="radio" name="gender" id="male" value="male"></td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>Female</td>
+<td><input type="radio" name="gender" id="female" value="female"></td>
+</tr>
+<tr>
+<td><b>Qualification:</b></td>
+<td>Graduation</label></td>
+<td><input type="checkbox" id="graduation" value="graduation"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>Post Graduation</td>
+<td><input type="checkbox" id="postgraduation" value="postgraduation"></td></tr>
+</tr><td>&nbsp;</td><td>Other</td>
+<td><input type="checkbox" id="other" value="other"></td></tr>
+<tr>
+<td><b>Message:</b></td>
+<td><textarea name="addinfo" id="info" placeholder="Message"></textarea></td>
+</tr>
+<tr>
+<td><input type="submit" data-inline="true" value="Submit" data-theme="b"></td>
+<td>&nbsp;</td>
+<td><input type="reset" value="Reset"data-inline="true"  data-theme="b"></td>
+</tr>
+</table>
+</form>
+</div>
+<!-------------------------------------------------------------
+End of First page
+-------------------------------------------------------------->
+<!-------------- Second page ----------->
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h1>Copyright &copy; All Rights Reserved</h1>
+</div>
+</div>	           
+</body>
+</html>
+$("#username").val(""); 
+		 $("#company").val("");
+		 $("#designation").val("");
+		 $("#emailid").val("");
+		 $("#phonenum").val("");
+		 $("#purpose").val("");

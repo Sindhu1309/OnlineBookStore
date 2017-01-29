@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <meta charset="utf-8">
+ <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script type="text/javascript" src="js/schedule.js"></script>
+    <script type="text/javascript">
+        $.mobile.pushStateEnabled = false;
+    </script>
+</head>
+<body> 
+<!-- Start of the header -->
+    <div data-role="header" data-theme="b" data-position="fixed">
+	    <a href="home.html"  rel="external" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>PlaceOrder</h1>
+    <a href="login.html" rel="external" class="ui-btn ui-corner-all ui-shadow ui-icon-power ui-btn-icon-left">Sign Out</a>
+       
+    </div><!-- /header -->
+<!-- Start of the content -->
+    <div data-role="content" data-theme="a">
+	   <form id="home" name="home" method="post" onsubmit="return validateschedule()"> 
+	<table width="520" border="0" align="center">
+		<tr>
+			<td></td>
+			<td><div id="error"></div></td>
+		</tr>
+		<tr>
+			<td>Name :</td>
+			<td><input type="text" name="username" id="username" required /></td>
+		</tr>
+		<tr>
+			<td>E-mail Id :</td>
+			<td><input type="email" name="emailid" id="emailid" required/></td>
+		</tr>
+		<tr>
+			<td>Mobie Number :</td>
+			<td><input type="text"  id="phonenum" required/></td>
+		</tr>
+		<tr>
+			<td>Landmark :</td>
+			<td><input type="text" name="landmark" id="landmark" required/></td>
+		</tr>
+		<tr>
+			<td>Address :</td>
+			<td><textarea rows="4" cols="50" id="address" required></textarea></td>
+		</tr>
+		<tr>
+			<td>City :</td>
+			<td><input type="text" name="city" id="city" required/></td>
+		</tr>
+		</tr>
+		<tr>
+			<td><input type="submit" name="create" id="create" value="PlaceOrder" /></td>
+			<td>&nbsp;</td>
+			<td><button type="reset" name="reset" id="reset" value="Reset">Reset</button></td>
+		</tr>
+</table>
+</form>
+     </div><!-- /content -->
+<!-- Start of the footer -->    
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4>Copyright &copy; All Rights Reserved</h4>
+    </div><!-- /footer -->
+
+</body>
+</html>
